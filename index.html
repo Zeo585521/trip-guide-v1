@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#155e75" />
+    <title>旅遊行程導航</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="tripDates">Trip Guide</p>
+          <h1 id="tripName">旅遊行程導航</h1>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" id="sourceButton" type="button" title="設定資料來源" aria-label="設定資料來源">
+            <span aria-hidden="true">⚙</span>
+          </button>
+          <button class="icon-button" id="refreshButton" type="button" title="更新行程" aria-label="更新行程">
+            <span aria-hidden="true">↻</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="status-band" id="statusBand" aria-live="polite">
+          <div>
+            <span class="status-label">目前顯示</span>
+            <strong id="activeDayLabel">載入中</strong>
+          </div>
+          <small id="updatedAt">尚未更新</small>
+        </section>
+
+        <nav class="day-tabs" id="dayTabs" aria-label="行程天數"></nav>
+
+        <section class="day-heading">
+          <div>
+            <p id="dayDate"></p>
+            <h2 id="dayTitle">載入中</h2>
+          </div>
+          <button class="text-button" id="todayButton" type="button">回到今日</button>
+        </section>
+
+        <section class="message-area" id="messageArea" aria-live="polite" hidden></section>
+        <section class="place-list" id="placeList" aria-label="行程清單"></section>
+      </main>
+    </div>
+
+    <template id="placeCardTemplate">
+      <article class="place-card itinerary-card">
+        <div class="place-visual">
+          <img class="place-image" alt="" loading="lazy" />
+          <iframe class="map-preview" title="地圖預覽" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="image-credit" target="_blank" rel="noopener" hidden>圖片來源</a>
+        </div>
+        <div class="place-body">
+          <div class="place-main">
+            <div>
+              <p class="place-time"><span class="type-badge"></span><span class="time-text"></span></p>
+              <h3 class="place-name"></h3>
+            </div>
+            <span class="place-order"></span>
+          </div>
+          <p class="place-description"></p>
+          <p class="place-address"></p>
+          <div class="link-row">
+            <a class="secondary-link website-link" target="_blank" rel="noopener">網站</a>
+            <a class="secondary-link map-link" target="_blank" rel="noopener">地圖</a>
+          </div>
+          <div class="nav-row">
+            <a class="nav-button apple-link" target="_blank" rel="noopener">Apple Maps</a>
+            <a class="nav-button google-link" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <template id="transportCardTemplate">
+      <article class="transport-card itinerary-card">
+        <div class="transport-rail">
+          <span class="transport-icon" aria-hidden="true">⇄</span>
+        </div>
+        <div class="place-body">
+          <div class="place-main">
+            <div>
+              <p class="place-time transport-time"><span class="type-badge">交通</span><span class="time-text"></span></p>
+              <h3 class="place-name transport-name"></h3>
+            </div>
+            <span class="place-order"></span>
+          </div>
+          <p class="route-line"></p>
+          <p class="place-description transport-note"></p>
+          <div class="link-row">
+            <a class="secondary-link ticket-link" target="_blank" rel="noopener">票券</a>
+          </div>
+          <div class="nav-row">
+            <a class="nav-button apple-link" target="_blank" rel="noopener">導航到出發地</a>
+            <a class="nav-button google-link" target="_blank" rel="noopener">Google 導航</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

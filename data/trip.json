@@ -1,0 +1,244 @@
+{
+  "tripName": "東京 6 日行程",
+  "startDate": "2026-10-01",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-10-01",
+      "title": "抵達與入住",
+      "items": [
+        {
+          "type": "transport",
+          "enabled": true,
+          "time": "12:20",
+          "name": "機場直達飯店附近",
+          "from": "成田機場第 2 航廈",
+          "to": "東京站",
+          "fromLat": 35.773212,
+          "fromLng": 140.387443,
+          "trainType": "成田特快 N'EX",
+          "trainNumber": "N'EX 20",
+          "departureTime": "12:20",
+          "arrivalTime": "13:18",
+          "platform": "B1F 1 號月台",
+          "seat": "指定席 6 號車 8A",
+          "ticketUrl": "",
+          "note": "出關後先確認實際月台，保留購票與集合時間。",
+          "navMode": "transit"
+        },
+        {
+          "type": "hotel",
+          "enabled": true,
+          "name": "東京範例飯店",
+          "time": "15:00 入住",
+          "description": "可先寄放行李。櫃台確認早餐時間與退房規則。",
+          "address": "Marunouchi, Chiyoda City, Tokyo",
+          "lat": 35.681236,
+          "lng": 139.767125,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=35.681236,139.767125",
+          "transportMode": "walking"
+        },
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "銀座",
+          "time": "17:30 彈性",
+          "description": "晚餐與商店街散步，時間可依班機狀況調整。",
+          "address": "Ginza, Chuo City, Tokyo",
+          "lat": 35.671989,
+          "lng": 139.763965,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=35.671989,139.763965",
+          "transportMode": "walking"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-10-02",
+      "title": "JR 與地鐵移動",
+      "items": [
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "淺草寺",
+          "time": "10:00",
+          "description": "參拜與仲見世通散步，適合拍照與買伴手禮。",
+          "address": "2 Chome-3-1 Asakusa, Taito City, Tokyo",
+          "lat": 35.714765,
+          "lng": 139.796655,
+          "imageUrl": "",
+          "websiteUrl": "https://www.senso-ji.jp/",
+          "mapUrl": "https://maps.google.com/?q=35.714765,139.796655",
+          "transportMode": "transit"
+        },
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "東京晴空塔",
+          "time": "15:00 彈性",
+          "description": "觀景台與商場，可依天氣決定是否上塔。",
+          "address": "1 Chome-1-2 Oshiage, Sumida City, Tokyo",
+          "lat": 35.710063,
+          "lng": 139.8107,
+          "imageUrl": "",
+          "websiteUrl": "https://www.tokyo-skytree.jp/",
+          "mapUrl": "https://maps.google.com/?q=35.710063,139.8107",
+          "transportMode": "transit"
+        },
+        {
+          "type": "restaurant",
+          "enabled": true,
+          "name": "淺草午餐候選",
+          "time": "12:30 彈性",
+          "description": "想吃的餐廳，可備註是否需要訂位、低消、排隊狀況。",
+          "address": "Asakusa, Taito City, Tokyo",
+          "lat": 35.7118,
+          "lng": 139.7967,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=35.7118,139.7967",
+          "transportMode": "walking"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-10-03",
+      "title": "對號列車移動",
+      "items": [
+        {
+          "type": "transport",
+          "enabled": true,
+          "time": "09:32",
+          "name": "新幹線移動",
+          "from": "東京站",
+          "to": "京都站",
+          "fromLat": 35.681236,
+          "fromLng": 139.767125,
+          "trainType": "東海道新幹線",
+          "trainNumber": "のぞみ 123",
+          "departureTime": "09:32",
+          "arrivalTime": "11:45",
+          "platform": "14 號月台",
+          "seat": "指定席 8 號車 12A",
+          "ticketUrl": "",
+          "note": "建議 09:05 前到站，先確認電子票與便當。",
+          "navMode": "transit"
+        },
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "京都車站",
+          "time": "11:45",
+          "description": "抵達後集合，視情況午餐或先寄放行李。",
+          "address": "Kyoto Station, Kyoto",
+          "lat": 34.985849,
+          "lng": 135.758767,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=34.985849,135.758767",
+          "transportMode": "walking"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-10-04",
+      "title": "自由安排",
+      "items": []
+    },
+    {
+      "day": 5,
+      "date": "2026-10-05",
+      "title": "台場",
+      "items": [
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "台場海濱公園",
+          "time": "13:00",
+          "description": "海邊散步與商場，適合作為午後行程。",
+          "address": "1 Chome-4 Daiba, Minato City, Tokyo",
+          "lat": 35.629906,
+          "lng": 139.77649,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=35.629906,139.77649",
+          "transportMode": "transit"
+        },
+        {
+          "type": "shopping",
+          "enabled": true,
+          "name": "DiverCity Tokyo Plaza",
+          "time": "15:30 彈性",
+          "description": "購物與室內休息點，可記錄想買品牌或集合地點。",
+          "address": "1 Chome-1-10 Aomi, Koto City, Tokyo",
+          "lat": 35.625185,
+          "lng": 139.775568,
+          "imageUrl": "",
+          "websiteUrl": "https://mitsui-shopping-park.com/divercity-tokyo/",
+          "mapUrl": "https://maps.google.com/?q=35.625185,139.775568",
+          "transportMode": "walking"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-10-06",
+      "title": "退房與返程",
+      "items": [
+        {
+          "type": "hotel",
+          "enabled": true,
+          "name": "東京範例飯店",
+          "time": "10:00 退房",
+          "description": "退房後可寄放行李，出發前再回飯店領取。",
+          "address": "Marunouchi, Chiyoda City, Tokyo",
+          "lat": 35.681236,
+          "lng": 139.767125,
+          "imageUrl": "",
+          "websiteUrl": "",
+          "mapUrl": "https://maps.google.com/?q=35.681236,139.767125",
+          "transportMode": "walking"
+        },
+        {
+          "type": "transport",
+          "enabled": true,
+          "time": "14:03",
+          "name": "機場對號列車",
+          "from": "東京站",
+          "to": "成田機場第 2 航廈",
+          "fromLat": 35.681236,
+          "fromLng": 139.767125,
+          "trainType": "成田特快 N'EX",
+          "trainNumber": "N'EX 37",
+          "departureTime": "14:03",
+          "arrivalTime": "15:00",
+          "platform": "地下月台",
+          "seat": "指定席 5 號車 10B",
+          "ticketUrl": "",
+          "note": "預留托運與安檢時間，若班機異動需重新確認車次。",
+          "navMode": "transit"
+        },
+        {
+          "type": "place",
+          "enabled": true,
+          "name": "成田機場第 2 航廈",
+          "time": "15:00",
+          "description": "預留交通、退稅、托運時間。",
+          "address": "Narita Airport Terminal 2",
+          "lat": 35.773212,
+          "lng": 140.387443,
+          "imageUrl": "",
+          "websiteUrl": "https://www.narita-airport.jp/",
+          "mapUrl": "https://maps.google.com/?q=35.773212,140.387443",
+          "transportMode": "transit"
+        }
+      ]
+    }
+  ]
+}
